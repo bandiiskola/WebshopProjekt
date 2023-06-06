@@ -1,0 +1,17 @@
+.btn {
+    margin: 0 auto;
+    display: block;
+}
+
+h5 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
