@@ -12,6 +12,9 @@ p{
 }
 
 .card{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
 }
