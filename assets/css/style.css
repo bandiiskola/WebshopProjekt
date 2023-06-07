@@ -38,6 +38,10 @@ body{
     margin-bottom: 20px;
 }
 
-.kozep{
-    margin-left: 15rem;
+#felul{
+    margin-top: 30px;
+}
+
+#vegosszeg{
+    text-align: center;
 }

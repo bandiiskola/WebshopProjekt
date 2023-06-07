@@ -4,6 +4,8 @@ var redlightdb=0
 var exeterdb=0
 var woddb=0
 var tigerdb=0
+var osszdb=0
+var vegosszeg=0
 var beirkosar=document.getElementById("kosar")
 
 let products = [
@@ -93,6 +95,12 @@ function kosar(szam)
     {
         beirkosar.innerHTML+="<img src='assets/images/"+products[5].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[5].name+" x1 "+products[5].price+" ft</p>"
     }
+    osszdb=eversincedb+redlightdb+exeterdb+woddb+tigerdb+glueedb
+    vegosszeg=osszdb*9000
+    if(document.getElementById("utanvet").checked==1){
+        vegosszeg+=490
+    }
+    document.getElementById("vegosszeg").innerHTML="Végösszeg: "+vegosszeg+" ft"
 
 }
 
@@ -144,5 +152,33 @@ function elvesz(szam)
     {
         beirkosar.innerHTML+="<img src='assets/images/"+products[5].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[5].name+" x1 "+products[5].price+" ft</p>"
     }
+    osszdb=eversincedb+redlightdb+exeterdb+woddb+tigerdb+glueedb
+    vegosszeg=osszdb*9000
+    if(document.getElementById("utanvet").checked==1){
+        vegosszeg+=490
+    }
+    document.getElementById("vegosszeg").innerHTML="Végösszeg: "+vegosszeg+" ft"
+    
+}
 
+function adatok() {
+    var nev = document.getElementById("nev").value
+    var isz = document.getElementById("isz").value
+    var telepules = document.getElementById("telepules").value
+    var utcahaz = document.getElementById("utcahaz").value
+    var email = document.getElementById("email").value
+    var teloszam = document.getElementById("teloszam").value
+
+    if (document.getElementById("check").checked == 1) {
+            document.getElementById("nev1").value = nev
+            document.getElementById("isz1").value = isz
+            document.getElementById("telepules1").value = telepules
+            document.getElementById("utcahaz1").value = utcahaz
+    }
+    else{
+            document.getElementById("nev1").value = ""
+            document.getElementById("isz1").value = ""
+            document.getElementById("telepules1").value = ""
+            document.getElementById("utcahaz1").value = ""
+    }
 }

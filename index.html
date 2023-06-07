@@ -92,13 +92,40 @@
             <h5 id="kosar">Kosár</h5>
           </div>
           <div class="col-md-6">
-            <h5>Szállítás</h5>
-            <div class="kozep">
-            <input type="radio" id="utanvet" name="fav_language" value="utanvet">
-            <label for="utanvet">Utánvét</label>
-            <input type="radio" id="kartyas" name="fav_language" value="kartyas">
-            <label for="kartyas">Kártyás</label>
+          <div class="row">
+            <div class="row" id="adatos">
+              <br>
+              <div class="col-md-6" id="adatos">
+                <h1>Számlázás</h1>
+                <p><input type="text" placeholder="Név" id="nev" onchange="adatok()"></p>
+                <p><input type="number" placeholder="Irányítószám" min="0" id="isz" onchange="adatok()"> <input type="text" placeholder="Település" id="telepules" onchange="adatok()"> </p>
+                <p><input type="text" placeholder="Utca,házszám" id="utcahaz" onchange="adatok()"></p>
+                <p><input type="text" placeholder="E-mail" id="email" onchange="adatok()"> <input type="text" placeholder="Telefonszám" id="teloszam" onchange="adatok()"></p>
+              </div>
+              <div class="col-md-6" id="adatos">
+                <h1>Szállítás</h1>
+                <p><input type="text" placeholder="Név" id="nev1"></p>
+                <p><input type="number" placeholder="Irányítószám" min="0" id="isz1"> <input type="text" placeholder="Település" id="telepules1"> </p>
+                <p><input type="text" placeholder="Utca,házszám" id="utcahaz1"></p>
+                <p> <input type="checkbox" id="check" onclick="adatok()"> A számlázási adat megegyezik a szállítási adattal</p>
+              </div>
+              <div class="row">
+                <div>
+                <input type="radio" id="utanvet" name="fav_language" onclick="elvesz()" value="utanvet">
+                <label for="utanvet">Utánvét(490 ft)</label>
+                <input type="radio" id="kartyas" name="fav_language" onclick="elvesz()" value="kartyas">
+                <label for="kartyas">Kártyás</label>
+              </div>
             </div>
+          </div>  
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h1 style="text-align: center;">Megrendelés</h1>
+            <p id="vegosszeg">Végösszeg: 0 ft</p>
+            <a onclick="kosar(6)" class="btn btn-primary">Megrendelés</a>
           </div>
         </div>
     </div>
