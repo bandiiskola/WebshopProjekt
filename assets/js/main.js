@@ -182,3 +182,22 @@ function adatok() {
             document.getElementById("utcahaz1").value = ""
     }
 }
+
+function megrendeles()
+{
+    console.log(nev)
+    if(osszdb==0)
+    {
+        alert("Nincs semmi a kosárban!")
+    }
+    if(document.getElementById("nev").value!=""&&document.getElementById("isz").value!=""&&document.getElementById("telepules").value!=""&&document.getElementById("utcahaz").value!=""&&document.getElementById("email").value!=""&&document.getElementById("teloszam").value!="")
+    {
+        alert("Rendelés leadva!")
+        location.reload()
+    }
+    else
+    {
+        alert("Nincs kitöltve az adat")
+    }
+
+}
