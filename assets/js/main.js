@@ -71,27 +71,27 @@ function kosar(szam)
     beirkosar.innerHTML="<h5 id='kosar'>Kosár</h5>"
     if(eversincedb==1)
     {
-        beirkosar.innerHTML+="<img src='assets/images/"+products[0].image+"-hover.png' class='minikep'>"+"<p>"+products[0].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[0].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[0].name+" x1 "+products[0].price+" ft</p>"
     }
     if(glueedb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[1].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[1].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[1].name+" x1 "+products[1].price+" ft</p>"
     }
     if(redlightdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[2].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[2].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[2].name+" x1 "+products[2].price+" ft</p>"
     }
     if(exeterdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[3].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[3].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[3].name+" x1 "+products[3].price+" ft</p>"
     }
     if(woddb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[4].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[4].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[4].name+" x1 "+products[4].price+" ft</p>"
     }
     if(tigerdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[5].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[5].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[5].name+" x1 "+products[5].price+" ft</p>"
     }
 
 }
@@ -122,27 +122,27 @@ function elvesz(szam)
     beirkosar.innerHTML="<h5 id='kosar'>Kosár</h5>"
     if(eversincedb==1)
     {
-        beirkosar.innerHTML+="<img src='"+products[0].image+"-hover' class='minikep'>"+"<p>"+products[0].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[0].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[0].name+" x1 "+products[0].price+" ft</p>"
     }
     if(glueedb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[1].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[1].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[1].name+" x1 "+products[1].price+" ft</p>"
     }
     if(redlightdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[2].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[2].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[2].name+" x1 "+products[2].price+" ft</p>"
     }
     if(exeterdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[3].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[3].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[3].name+" x1 "+products[3].price+" ft</p>"
     }
     if(woddb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[4].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[4].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[4].name+" x1 "+products[4].price+" ft</p>"
     }
     if(tigerdb==1)
     {
-        beirkosar.innerHTML+="<p>"+products[5].name+" x1"+"</p>"
+        beirkosar.innerHTML+="<img src='assets/images/"+products[5].image+"-hover.png' class='minikep'>"+"<p class='kosarszoveg'>"+products[5].name+" x1 "+products[5].price+" ft</p>"
     }
 
 }
