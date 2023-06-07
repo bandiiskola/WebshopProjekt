@@ -154,7 +154,7 @@ function elvesz(szam)
     }
     osszdb=eversincedb+redlightdb+exeterdb+woddb+tigerdb+glueedb
     vegosszeg=osszdb*9000
-    if(document.getElementById("utanvet").checked==1){
+    if(document.getElementById("utanvet").checked==1&&vegosszeg<18000){
         vegosszeg+=490
     }
     document.getElementById("vegosszeg").innerHTML="Végösszeg: "+vegosszeg+" ft"
